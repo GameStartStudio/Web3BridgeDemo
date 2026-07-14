@@ -51,11 +51,12 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/WebGL.loader.js";
+      var releaseTag = "?release=e8610fd";
+      var loaderUrl = buildUrl + "/WebGL.loader.js" + releaseTag;
       var config = {
-        dataUrl: buildUrl + "/WebGL.data",
-        frameworkUrl: buildUrl + "/WebGL.framework.js",
-        codeUrl: buildUrl + "/WebGL.wasm",
+        dataUrl: buildUrl + "/WebGL.data" + releaseTag,
+        frameworkUrl: buildUrl + "/WebGL.framework.js" + releaseTag,
+        codeUrl: buildUrl + "/WebGL.wasm" + releaseTag,
         streamingAssetsUrl: "StreamingAssets",
         companyName: "GameStartStudio",
         productName: "Web3Bridge Wallet Demo",
